@@ -312,7 +312,7 @@
 
 - 1.理解`泛型`、`接口`等面向对象的相关概念，`TypeScript`对面向对象理念的实现
 
-- 2.理解使用`TypeScript`的好处，掌握`TypeScript`基础语法
+- 2.[理解使用`TypeScript`的好处，掌握`TypeScript`基础语法](base\框架和类库\Typescript\基础语法.md)
 
 - 3.`TypeScript`的规则检测原理
 
