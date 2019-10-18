@@ -20,4 +20,4 @@
 ##### hash-object命令(获取content的SHA1字符串)
 ![blob](./images/What-is-Git/git-bash-hash-object.png) 
 - --stdin => 从命令行中获取标准输入,否则该命令一般用于转换文件
-- 
+
