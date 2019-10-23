@@ -58,16 +58,46 @@
     - 垃圾回收期间
     - 推向远程仓库
 
-#### commit对象
+#### commit对象(代码快照)
 构成:
 - 指针:指向tree
 - 作者和committer
 - 日期
 - message
-- 父级提交(可能没有,也可能多个)
+- 父级commits(可能没有,也可能多个)
 - SHA1值是以上数据的hash值  
-![commit](./images/What-is-Git/commit.png)  
+![commit](./images/What-is-Git/commit.png) 
 
+##### cat 命令(linux)
+- 显示整个文件
+```
+cat filename
+```
+- 创建一个新文件
+```
+cat > filename
+```
+- 合并文件
+```
+cat file1 file2 > file
+```
+##### 显示 blob 文件
 
+![cat](./images/What-is-Git/cat.png) 
+- 此处是压缩对象
 
+##### cat-file命令
+![cat-file](./images/What-is-Git/cat-file-t.png) 
+- -t =>显示类型  
 
+![cat-file](./images/What-is-Git/cat-file-p.png) 
+- -p 显示内容  
+
+- tree
+![cat-file](./images/What-is-Git/cat-file-tree.png) 
+![cat-file](./images/What-is-Git/tree2.png) 
+- commit
+![cat-file](./images/What-is-Git/commit1.png) 
+##### 为什么 commit 无法被修改
+- 修改任何数据,commit都会生成新的SHA1
+- 即使数据没有变动,时间也不会相同
