@@ -27,3 +27,9 @@ git mv <file>
 - 暂存区让 git 知道下一次提交与当前提交的变化
 ### Repository
 - 保存所有提交的区域
+
+### git中代码所在位置的切换
+![move](./images/git-areas-and-stashing/move.png)
+
+### git stash 
+- 保存未提交的变动
