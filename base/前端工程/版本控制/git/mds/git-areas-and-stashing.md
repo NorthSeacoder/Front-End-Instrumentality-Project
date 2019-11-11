@@ -33,3 +33,41 @@ git mv <file>
 
 ### git stash 
 - 保存未提交的变动
+#### 基础使用
+```
+//保存
+git stash
+
+//查看
+git stash list
+
+//查看内容
+git stash show stash@{0}
+
+//应用最新的 stash(保留)
+git stash apply
+
+//应用特定的 stash
+git stash apply stash@{0}
+
+//保存文件(默认不保存新增文件)
+git stash --include-untracked
+
+//保存所有文件(包括 gitignore)
+git stash --all
+
+//命名
+git stash save "name"
+
+//从 stash 建立分支
+git stash branch <branchname> <stashid>
+
+//应用并删除最新 stash,有冲突则不删除
+git stash pop
+
+//删除 stash
+git stash drop <stashid(不填则删除最新 stash)>
+
+//删除所有 stash
+git stash clear
+```
